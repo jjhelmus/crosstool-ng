@@ -186,6 +186,7 @@ do_binutils_backend() {
         --target=${CT_TARGET}                                   \
         --prefix=${prefix}                                      \
         --disable-werror                                        \
+        --enable-poison-system-directories                      \
         "${extra_config[@]}"                                    \
         ${CT_ARCH_WITH_FLOAT}                                   \
         ${CT_BINUTILS_SYSROOT_ARG}                              \
